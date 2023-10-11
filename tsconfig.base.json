@@ -29,6 +29,9 @@
       ],
       "@testgen-five/common/common-services": [
         "libs/common/common-services/src/index.ts"
+      ],
+      "@testgen-five/common/common-guards": [
+        "libs/common/common-guards/src/index.ts"
       ]
     }
   },
