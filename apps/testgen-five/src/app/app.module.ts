@@ -8,10 +8,18 @@ import { GlobalHeaderComponentModule } from "@testgen-five/common/ui";
 import { GlobalFooterModule } from "@testgen-five/common/ui";
 import { GlobalSidenavModule } from "@testgen-five/common/ui";
 import { MatListModule } from "@angular/material/list";
+import { StoreDevtoolsModule } from "@ngrx/store-devtools";
+import { StoreModule } from "@ngrx/store";
+import { environment } from "@testgen-five/common/common-environment";
+import { StoreRouterConnectingModule, routerReducer } from "@ngrx/router-store";
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule, GlobalHeaderComponentModule, GlobalFooterModule, GlobalSidenavModule, MatListModule],
+  imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule, GlobalHeaderComponentModule, GlobalFooterModule, GlobalSidenavModule, MatListModule, StoreModule.forRoot({}), StoreDevtoolsModule.instrument({
+    maxAge: 25, // Retains last 25 states
+    logOnly: environment.production, // Restrict extension to log-only mode
+    autoPause: true, // Pauses recording actions and state changes when the extension window is not open
+  }),],
   providers: [],
   bootstrap: [AppComponent],
 })
