@@ -32,6 +32,9 @@
       ],
       "@testgen-five/common/common-guards": [
         "libs/common/common-guards/src/index.ts"
+      ],
+      "@testgen-five/data-access": [
+        "libs/data-access/src/index.ts"
       ]
     }
   },
