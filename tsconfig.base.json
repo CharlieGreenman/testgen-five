@@ -41,6 +41,9 @@
       ],
       "@testgen-five/data-graphql": [
         "libs/data-graphql/src/index.ts"
+      ],
+      "@testgen-five/data-models": [
+        "libs/data-models/src/index.ts"
       ]
     }
   },
