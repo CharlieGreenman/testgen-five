@@ -26,6 +26,9 @@
       ],
       "@testgen-five/home": [
         "libs/home/src/index.ts"
+      ],
+      "@testgen-five/common/common-services": [
+        "libs/common/common-services/src/index.ts"
       ]
     }
   },
