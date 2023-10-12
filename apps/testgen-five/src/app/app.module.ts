@@ -11,7 +11,6 @@ import { MatListModule } from "@angular/material/list";
 import { StoreDevtoolsModule } from "@ngrx/store-devtools";
 import { StoreModule } from "@ngrx/store";
 import { environment } from "@testgen-five/common/common-environment";
-import { StoreRouterConnectingModule, routerReducer } from "@ngrx/router-store";
 
 @NgModule({
   declarations: [AppComponent],
